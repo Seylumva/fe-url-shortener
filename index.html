@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <script src="https://kit.fontawesome.com/a238a741a5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Header -->
+  <header class="nav container">
+    <div class="site-title">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <button class="nav-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-list nav-list--hidden">
+      <li class="nav-list__item">
+        <a href="#" class="nav-list__link">Features</a>
+        <a href="#" class="nav-list__link">Pricing</a>
+        <a href="#" class="nav-list__link">Resources</a>
+        <a href="#" class="nav-list__link">Login</a>
+        <a href="#" class="nav-list__link btn--pill btn--cyan">Sign Up</a>
+      </li>
+    </ul>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero container">
+    <section class="hero-img">
+      <img src="./images/illustration-working.svg" alt="">
+    </section>
+    <section class="hero-text">
+      <h1>More than just shorter links</h1>
+      <p>Build your brand’s recognition and get detailed insights
+        on how your links are performing.</p>
+      <a href="#" class="btn--pill btn--cyan">Get started</a>
+    </section>
+  </section>
+  <!-- Link Shortener Form -->
+  <section class="link-form">
+    <form class="form container">
+      <input type="text" name="url" id="url" placeholder="Shorten a link here..." required>
+      <!-- <span class="validation-error">Please add a link</span> -->
+      <button class="btn btn--cyan d-block">Shorten It!</button>
+    </form>
+  </section>
+  <!-- List of shortened links -->
+  <section class="shortened-links">
+    <div class="link">
+      <p class="link__original">https://www.frontendmentor.io</p>
+      <div class="link__new">
+        <a href="#" class="link__short">https://rel.ink/k4lKyk</a>
+        <button class="btn btn--cyan">Copy</button>
+      </div>
+    </div>
+    <div class="link">
+      <p class="link__original">https://www.frontendmentor.io</p>
+      <div class="link__new">
+        <a href="#" class="link__short">https://rel.ink/k4lKyk</a>
+        <button class="btn btn--cyan">Copy</button>
+      </div>
+    </div>
+    <div class="link">
+      <p class="link__original">https://www.frontendmentor.io</p>
+      <div class="link__new">
+        <a href="#" class="link__short">https://rel.ink/k4lKyk</a>
+        <button class="btn btn--cyan">Copy</button>
+      </div>
+    </div>
+  </section>
+  <!-- List of features -->
+  <section class="features">
+    <section class="heading container">
+      <h2>Advanced Statistics</h2>
+      <p>Track how your links are performing across the web with our
+        advanced statistics dashboard.
+      </p>
+    </section>
+    <div class="feature card container">
+      <div class="card-badge">
+        <img src="./images/icon-brand-recognition.svg" alt="">
+      </div>
+      <h3>Brand Recognition</h3>
+      <p>Boost your brand recognition with each click. Generic links don’t
+        mean a thing. Branded links help instil confidence in your content.</p>
+    </div>
+    <div class="feature card container">
+      <div class="card-badge">
+        <img src="./images/icon-detailed-records.svg" alt="">
+      </div>
+      <h3>Detailed Records</h3>
+      <p>Gain insights into who is clicking your links. Knowing when and where
+        people engage with your content helps inform better decisions.</p>
+    </div>
+    <div class="feature card container">
+      <div class="card-badge">
+        <img src="./images/icon-fully-customizable.svg" alt="">
+      </div>
+      <h3>Fully Customizable</h3>
+      <p>Improve brand awareness and content discoverability through customizable
+        links, supercharging audience engagement.</p>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Boost your links today</h2>
+    <a href="#" class="btn--cyan btn--pill">Get Started</a>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="./images/logo.svg" alt="" class="logo footer--logo">
+    <ul class="footer__links">
+      <h3>Features</h3>
+      <a href="#">Link Shortening</a>
+      <a href="#">Branded Links</a>
+      <a href="#">Analytics</a>
+    </ul>
+    <ul class="footer__links">
+      <h3>Resources</h3>
+      <a href="#">Blog</a>
+      <a href="#">Developers</a>
+      <a href="#">Support</a>
+    </ul>
+    <ul class="footer__links">
+      <h3>Company</h3>
+      <a href="#">About</a>
+      <a href="#">Our Team</a>
+      <a href="#">Contact</a>
+    </ul>
+    <ul class="footer__socials">
+      <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </ul>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://nemil.io/">Emilio N</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
